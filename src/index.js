@@ -3,6 +3,16 @@ import React from "react";
 
 import "./index.css";
 
-const tag = <strong>Olá React!!!</strong>;
+import First from "./components/basics/First";
+import WithParameter from "./components/basics/WithParameter";
 
-ReactDOM.render(<div>{tag}</div>, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <First></First>
+    <WithParameter
+      title="Segundo componente"
+      subtitle="Muito legal!"
+    ></WithParameter>
+  </div>,
+  document.getElementById("root")
+);
